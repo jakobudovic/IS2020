@@ -124,7 +124,7 @@ for (neigh in 1:10){
   }
   
   ## aggregate the results
-  results <- gatherFromList(evalCore)
+  results <- gatherFromList(evalCore) # nadaljevane CV cvGen()
   
   ## get mean performance across all folds
   meanPerformances <- sapply(results, mean)
@@ -298,3 +298,4 @@ qplot(rf_random$results$mtry,rf_random$results$Accuracy, geom = c("line","point"
 
 stopCluster(cl)
 registerDoSEQ()
+

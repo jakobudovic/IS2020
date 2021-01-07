@@ -330,7 +330,7 @@ data(iris)
 
 # Get mean of each column with mean()
 lapply(iris[,1:3], mean) ## lapply returns a list!
-sapply(iris[,1:3] ,mean) ## sapply returns a vector!
+sapply(iris[,1:3], mean) ## sapply returns a vector!
 apply(iris[,1:3], 1, sum) ## apply operates across a given dimension (1 = row-wise)
  
 # Or using native methods
